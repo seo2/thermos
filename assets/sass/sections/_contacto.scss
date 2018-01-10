@@ -1,0 +1,25 @@
+section.contacto{
+	position: relative;
+	padding: 50px 0;
+	.titulo-contacto {
+		@media(max-width: 767px){
+			margin-bottom: 50px;
+		}
+	}
+	form#contacto{
+		.form-group{
+			.form-control{
+				border: 2px solid black;
+				border-radius: 0;
+				padding: 20px;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+
+			}
+		}
+		.btn-negro-lg{
+			margin-top: 10px;
+			padding: 10px 40px;
+		}
+	}
+}

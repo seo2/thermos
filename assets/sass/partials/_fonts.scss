@@ -1,0 +1,118 @@
+//Tipografía
+//@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+
+@font-face {
+    font-family: 'Greysans';
+    src: url('../fonts/grey_sans_light-webfont.woff2') format('woff2'),
+         url('../fonts/grey_sans_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+        url('../fonts/Pacifico-Regular.woff') format('woff'),
+        url('../fonts/Pacifico-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/BebasNeueBold.woff2') format('woff2'),
+        url('../fonts/BebasNeueBold.woff') format('woff'),
+        url('../fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hoefler';
+    src: url('../fonts/HoeflerText-Regular.woff2') format('woff2'),
+        url('../fonts/HoeflerText-Regular.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+$font-stack: 'Greysans', Helvetica, Arial, sans-serif;
+$greysans: 'Greysans', Helvetica, Arial, sans-serif;
+$pacifico: 'Pacifico',Helvetica, Arial, sans-serif;
+$bebas: 'Bebas',Helvetica, Arial, sans-serif;
+$hoefler: 'Hoefler',Helvetica, Arial, sans-serif;
+
+
+$main-font-color: black;
+$size: 16px;
+
+body{
+	font-family: $font-stack;
+	font-size: $size;
+	color: $main-font-color;
+}
+
+//Rems
+//Set a rem font size with pixel fallback
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Pesos
+
+@mixin bold($size, $main-font-color){
+  //font-weight: 700;
+  color: $main-font-color;
+  @include font-size($size);
+}
+@mixin regular($size, $main-font-color){
+  //font-weight: 400;
+  color: $main-font-color;
+  @include font-size($size);
+}
+@mixin light($size, $main-font-color){
+ // font-weight: 300;
+  color: $main-font-color;
+  @include font-size($size);
+}
+
+//Títulos
+
+h1, h2, h3, h4, h5, h6{
+    @include bold($size, $main-font-color);
+    text-transform: uppercase;
+}
+
+//Párrafos
+
+p{
+  @include regular(15px, $main-font-color);
+  &.call {
+    @include font-size(13px);
+    letter-spacing: 4px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    @media(max-width: 991px){
+      text-align: center;
+       @include font-size(12px);
+       margin-bottom: 40px;
+    }
+  }
+  &.texto-negro{
+		@include regular(13px, $main-font-color);
+		letter-spacing: 4px;
+		text-transform: none;
+		margin: 0;
+  }
+}
+
+//Listas
+
+
+

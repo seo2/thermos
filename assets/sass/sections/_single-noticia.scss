@@ -1,0 +1,39 @@
+.container-news{
+	@media(min-width:1200px){
+		max-width: 960px;
+	}
+}
+section.noticia{
+	background-color: $gris;
+	.box-texto{
+		@include titulo-noticias;
+	}
+	.box-imagen{
+		margin-bottom: 50px;
+	}
+	.intro-noticia {
+		padding: 0 80px;
+		margin-bottom: 70px;
+		@media(max-width:768px){
+			padding: 0px;
+		}
+		p{
+			@include texto-noticias;
+		}
+	}
+	h2{
+		@include titulo-blanco;
+	}
+	ul, ol {
+		//margin: 0;
+		padding: 0 0 0 12px;
+	}
+	ul li, ol li{
+		@include texto-lista;
+	}
+	ul.autor {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+}

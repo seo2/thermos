@@ -1,35 +1,19 @@
+<?php include('header.php'); ?>
+  <body>
+  		<?php include('include-main-nav.php'); ?>
 
-<?php get_header(); ?>
+		<?php include('include-section-slider-home.php'); ?>
 
-	<section id="slider">
+		<?php include('include-section-slider-productos-home.php'); ?>
 
-	</section>
+		<?php include('include-section-news.php'); ?>
 
-	<section id="productos">
+		<?php include('include-section-instagram.php'); ?>
 
-	</section>
+		<?php include('include-section-contacto.php'); ?>
 
-	<section id="noticias">
+		<?php include('include-section-ubicanos.php'); ?>
 
-	</section>
+		<?php include('include-section-newsletter.php'); ?>
 
-	<section id="instagram">
-
-	</section>
-
-	<section id="contacto">
-
-	</section>
-
-	<section id="ubicanos">
-
-	</section>
-
-	<section id="newsletter">
-
-	</section>
-
-<?php get_footer(); ?>
-
-
-
+<?php include('footer.php'); ?>
