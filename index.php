@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+<?php get_header(); ?>
   <body>
   		<?php include('include-main-nav.php'); ?>
 
@@ -16,4 +16,4 @@
 
 		<?php include('include-section-newsletter.php'); ?>
 
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>

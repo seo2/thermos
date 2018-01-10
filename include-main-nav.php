@@ -3,7 +3,7 @@
 		        <span class="navbar-toggler-icon"></span>
 		    </button>
 			<a class="logo-xs nav-link d-block d-lg-none" href="#" >
-				<img class="img-fluid" id="logo-navbar-xs" src="assets/img/logo-thermos.png" alt="Thermos">
+				<img class="img-fluid" id="logo-navbar-xs" src="<?php bloginfo('template_url') ?>/assets/img/logo-thermos.png" alt="Thermos">
 			</a>
 			<div class="rrss d-block d-lg-none h-center">
 					<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -15,14 +15,14 @@
 		    <div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mx-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="page-nosotros.php">nosotros</a>
+						<a class="nav-link" href="<?php bloginfo('url'); ?>/nosotros/">nosotros</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="page-productos.php">productos</a>
+						<a class="nav-link" href="<?php bloginfo('url'); ?>/productos/">productos</a>
 					</li>
 					<li class="nav-item d-none d-lg-block">
 						<a class="nav-link" href="index.php">
-							<img class="img-fluid" id="logo-navbar-middle" src="assets/img/logo-thermos.png" alt="Thermos">
+							<img class="img-fluid" id="logo-navbar-middle" src="<?php bloginfo('template_url') ?>/assets/img/logo-thermos.png" alt="Thermos">
 						</a>
 					</li>
 					<li class="nav-item">

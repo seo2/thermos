@@ -1,6 +1,6 @@
 <section class="newsletter section">
 	<div class="container">
-		<img class="img-fluid d-block mx-auto section-title" src="assets/img/tit-newsletter.png" alt="">
+		<img class="img-fluid d-block mx-auto section-title" src="<?php bloginfo('template_url'); ?>/assets/img/tit-newsletter.png" alt="">
 		<div class="row">
 			<div class="col">
 				<form id="newsletter" class="d-block mx-auto">

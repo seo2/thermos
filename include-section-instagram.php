@@ -1,10 +1,10 @@
 
 <section class="instagram section">
-	<img class="img-fluid d-block mx-auto section-title" src="assets/img/tit-instagram.png" alt="">
+	<img class="img-fluid d-block mx-auto section-title" src="<?php bloginfo('template_url'); ?>/assets/img/tit-instagram.png" alt="">
 	<div class="container-fluid no-pad">
 		<div class="caja-imagenes">
 				<div data-is
-				    data-is-api="assets/js/instashow/api/"
+				    data-is-api="<?php bloginfo('template_url'); ?>/assets/js/instashow/api/"
 					data-is-source="@thermoscl"
 				    data-is-width="auto"
 				    data-is-height="auto"

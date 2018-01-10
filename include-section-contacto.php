@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<img class="img-fluid d-block mx-auto titulo-contacto" src="assets/img/tit-contacto.png" alt="">
+				<img class="img-fluid d-block mx-auto titulo-contacto" src="<?php bloginfo('template_url'); ?>/assets/img/tit-contacto.png" alt="">
 			</div>
 			<div class="col-sm-6">
 				<form id="contacto">
