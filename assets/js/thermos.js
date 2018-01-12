@@ -27,7 +27,7 @@ $('#slider-productos').owlCarousel({
     dots: false,
     center: false,
    // autoWidth: true,
-    autoplay: true,
+    autoplay: false,
     responsive:{
         0:{
             items:1

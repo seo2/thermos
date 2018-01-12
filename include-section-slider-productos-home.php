@@ -11,8 +11,10 @@
 					$the_query = new WP_Query ($args);
 				?>
 				<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
 					  	<?
 					  	$f = 0;
+					  	$e = 0;
 					  	$bloques = get_order_group('slider_producto_imagen'); // guarda el bloque en un array //poner uno de los campos
 
 					  	foreach($bloques as $bloque){ // recorre cada bloque de edición
@@ -20,7 +22,9 @@
 								$e = $e +1;
 								$f++;
 								$items = get_order_field('slider_producto_imagen', $bloque); // guarda las items en un array
+
 								foreach ($items as $item) {
+
 								?>
 								<a href="<?php echo get('slider_producto_link', $e, $item ); ?>" class="item">
 									<!-- 600x600 -->

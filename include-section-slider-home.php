@@ -19,7 +19,9 @@
 			$f++;
 			$fotos = get_order_field('banner_imagen_escritorio', $bloque); // guarda las fotos en un array
 
+
 			foreach ($fotos as $foto) {
+
 			?>
 				<a href="<?php echo get('banner_link', $e, $foto ); ?>" class="item">
 					<!-- 1920*600 -->
