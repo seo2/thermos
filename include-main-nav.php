@@ -2,7 +2,7 @@
 	 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 		        <span class="navbar-toggler-icon"></span>
 		    </button>
-			<a class="logo-xs nav-link d-block d-lg-none" href="#" >
+			<a class="logo-xs nav-link d-block d-lg-none" href="<?php bloginfo('url'); ?>">
 				<img class="img-fluid" id="logo-navbar-xs" src="<?php bloginfo('template_url') ?>/assets/img/logo-thermos.png" alt="Thermos">
 			</a>
 			<div class="rrss d-block d-lg-none h-center">
@@ -21,12 +21,17 @@
 						<a class="nav-link" href="<?php bloginfo('url'); ?>/productos/">productos</a>
 					</li>
 					<li class="nav-item d-none d-lg-block">
-						<a class="nav-link" href="index.php">
+						<a class="nav-link" href="<?php bloginfo('url'); ?>">
 							<img class="img-fluid" id="logo-navbar-middle" src="<?php bloginfo('template_url') ?>/assets/img/logo-thermos.png" alt="Thermos">
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#noticias">noticias</a>
+						<?php if(is_home()) { ?>
+							<a class="nav-link" href="#noticias">noticias</a>
+						<? } else { ?>
+							<a class="nav-link" href="<?php bloginfo('url'); ?>/noticias/">noticias</a>
+						<? } ?>
+
 					</li>
 
 					<li class="nav-item">

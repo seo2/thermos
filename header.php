@@ -1,10 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Thermos</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<?php bloginfo('description'); ?>">
+     <link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.png">
+    <?php if(is_home()) : ?>
+    <title><?php bloginfo('name'); ?></title>
+    <?php else : ?>
+    <title><?php wp_title('', true,''); ?> · Thermos</title>
+    <?php endif;?>
+
+
 
 	 <?php wp_head(); ?>
   </head>
+ <body>
+  		<?php include('include-main-nav.php'); ?>

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-  <body>
-  		<?php include('include-main-nav.php'); ?>
+
 
 		<?php include('include-section-slider-home.php'); ?>
 
