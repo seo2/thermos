@@ -355,7 +355,7 @@ section.news .box-bottom .box-imagen { position: absolute; right: 0; top: 170px;
 
 @media (max-width: 767px) { section.news .box-bottom .box-imagen { position: relative; top: auto; right: auto; } }
 
-section.instagram .caja-imagenes { min-height: 324px; background: #ccc; }
+section.instagram .caja-imagenes { background: #ccc; }
 
 section.contacto { position: relative; padding: 50px 0; }
 
