@@ -8,46 +8,23 @@
 		</div>
 		<div class="col-md-8">
 			<div class="row">
+				<?php
+				   $args = array (
+				       'post_type' => 'logos_tiendas',
+				       'posts_per_page'=> -1
+				     );
+				     $the_query = new WP_Query ($args);
+				 ?>
+				  <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="https://www.falabella.com/falabella-cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-falabella.png" alt="">
+					<a class="box-logo d-block" href="<?php echo get('enlace_url_sitio'); ?>" target="_blank">
+						<img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
 					</a>
 				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="http://www.preunic.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-preunic.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="http://www.jumbo.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-jumbo.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="https://www.lider.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-lider.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="https://simple.ripley.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-ripley.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="https://www.paris.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-paris.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="https://www.easy.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-easy.png" alt="">
-					</a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="box-logo d-block" href="http://www.sodimac.cl/" target="_blank">
-						<img class="img-fluid" src="<?php bloginfo('template_url'); ?>/assets/img/logos/logo-sodimac.png" alt="">
-					</a>
-				</div>
+				<?php endwhile; else: ?>
+				<?php endif; ?>
+				<?php wp_reset_postdata()?>
+
 			</div>
 		</div>
 	</div>
