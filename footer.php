@@ -5,13 +5,13 @@
 				<li>El Rosal 4560, Huechuraba, Santiago, Chile.</li>
 				<li>|</li>
 				<li>(02) 2870 4320</li>
-				<li>|</li>
-				<li><a href="">Reglas del sorteo</a></li>
-				<li>|</li>
-				<li><a href="">Política de privacidad</a></li>
+				<!-- <li>|</li> -->
+				<!-- <li><a href="">Reglas del sorteo</a></li> -->
+				<!-- <li>|</li> -->
+				<!-- <li><a href="">Política de privacidad</a></li> -->
 			</ul>
 			<div class="copy">
-				<p> <i class="fa fa-copyright" aria-hidden="true"></i>2017, todos los derechos reservados</p>
+				<p> <i class="fa fa-copyright" aria-hidden="true"></i> <?php echo date('Y'); ?>. Todos los derechos reservados</p>
 			</div>
 				<div class="rrss-footer">
 					<ul>

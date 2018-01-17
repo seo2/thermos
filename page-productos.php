@@ -1,3 +1,4 @@
+<?php /* Template Name: Productos */ ?>
 <?php include('header.php'); ?>
   <body>
   	<?php include('include-main-nav.php'); ?>
@@ -78,8 +79,8 @@
   				</div>
   			</div>
 
-  		</div>
-  	</div>
+  		</div> <!-- row -->
+  	</div> <!-- container -->
 
   </section> <!-- productos -->
 

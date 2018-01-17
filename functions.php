@@ -7,6 +7,9 @@ function iniciarTema(){
     add_image_size('preview_galerias', 650, 650, true);
 /*     add_image_size('galeria', 200); */
 
+//thumnails para las categorias
+add_theme_support('category-thumbnails');
+
     // Activar Titulo
     add_theme_support( 'title-tag' );
     register_nav_menu( 'primary', __( 'Menú Principal', 'menu_principal' ) );

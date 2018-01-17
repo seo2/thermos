@@ -14,15 +14,15 @@
 				    data-is-rows="1"
 				    data-is-gutter="0"
 				    data-is-direction="horizontal"
-				    data-is-speed="1100"
+				    data-is-speed="2000"
 				    data-is-easing="ease-in-out"
 				    data-is-auto="2000"
 				    data-is-popup-easing="ease-in-out"
 				    data-is-lang="es"
 				    data-is-info="likesCounter, description"
-					data-is-color-gallery-overlay="rgba(0,87,167,0.9)"
-					data-is-color-popup-controls ="rgb(0,87,167)"
-					data-is-color-popup-controls-hover ="rgb(0,87,167)"
+					data-is-color-gallery-overlay="rgba(0,0,0,0.9)"
+					data-is-color-popup-controls ="rgb(0,0,0)"
+					data-is-color-popup-controls-hover ="rgb(0,0,0)"
 					data-is-popup-deep-linking="true"
 					data-is-color-popup-overlay="rgba(255,255,255,.9)"
 					data-is-popup-info="username, instagramLink"
@@ -30,8 +30,6 @@
 					data-is-scrollbar="false"
 					data-is-easing="ease-in-out"
 					data-is-arrows-control="false"
-
-
 				>
 			</div>
 		</div>
