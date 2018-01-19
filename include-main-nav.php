@@ -29,13 +29,17 @@
 						<?php if(is_home()) { ?>
 							<a class="nav-link" href="#noticias">noticias</a>
 						<? } else { ?>
-							<a class="nav-link" href="<?php bloginfo('url'); ?>/noticias/">noticias</a>
+							<a class="nav-link" href="<?php bloginfo('url'); ?>#noticias">noticias</a>
 						<? } ?>
-
 					</li>
 
 					<li class="nav-item">
-						<a class="nav-link" href="#contacto">contacto</a>
+						<?php if(is_home()) { ?>
+							<a class="nav-link" href="#contacto">contacto</a>
+						<? } else { ?>
+							<a class="nav-link" href="<?php bloginfo('url'); ?>#contacto">contacto</a>
+						<? } ?>
+
 					</li>
 				</ul>
 				<div class="rrss d-none d-lg-block">
