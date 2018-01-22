@@ -82,8 +82,8 @@ $('.botonera-zoom-producto').owlCarousel({
 
 // ===== Scroll to Top ==== //
   $(window).scroll(function() {
-      if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 500px
-          $('#return-to-top').fadeIn(500);    // Fade in the arrow
+      if ($(this).scrollTop() >= 688) {        // If page is scrolled more than 500px
+          $('#return-to-top').fadeIn(1000);    // Fade in the arrow
       } else {
           $('#return-to-top').fadeOut(200);   // Else fade out the arrow
       }
@@ -127,8 +127,6 @@ $.fn.moveIt = function(){
 	  $('[data-scroll-speed]').moveIt();
 	});
 
-// ===== zoom  ==== //
-//initiate the plugin and pass the id of the div containing gallery images
 
 // ===== zoom  ==== //
 //initiate the plugin and pass the id of the div containing gallery images

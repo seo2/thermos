@@ -16,4 +16,8 @@
 	 <?php wp_head(); ?>
   </head>
  <body>
+ 	 <a href="javascript:void(0);" id="return-to-top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
+
   		<?php include('include-main-nav.php'); ?>

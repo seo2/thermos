@@ -24,6 +24,16 @@ p.call { font-size: 13px; font-size: 0.8125rem; letter-spacing: 4px; margin-top:
 
 p.texto-negro { color: black; font-size: 13px; font-size: 0.8125rem; letter-spacing: 4px; text-transform: none; margin: 0; }
 
+#return-to-top { position: fixed; bottom: 20px; right: 40px; background: black; background: rgba(0, 0, 0, 0.7); width: 50px; height: 50px; display: block; text-decoration: none; border-radius: 35px; display: none; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; z-index: 100; }
+
+@media (max-width: 767px) { #return-to-top { right: 15px; } }
+
+#return-to-top:hover { background: rgba(0, 0, 0, 0.9); }
+
+#return-to-top:hover i { color: #fff; top: 5px; }
+
+#return-to-top i { color: #fff; margin: 0; position: relative; left: 16px; top: 13px; font-size: 19px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+
 .banderita { position: absolute; background-color: transparent; width: 4px; height: 4px; top: -100px; }
 
 @media (max-width: 768px) { .banderita { top: -60px; } }
