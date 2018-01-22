@@ -27,7 +27,7 @@ $('#slider-productos').owlCarousel({
     dots: false,
     center: false,
    // autoWidth: true,
-    autoplay: false,
+    autoplay: true,
     responsive:{
         0:{
             items:1
@@ -40,6 +40,7 @@ $('#slider-productos').owlCarousel({
         }
     }
 });
+
 $('.botonera-zoom-producto').owlCarousel({
     loop:false,
     lazyLoad: true,
@@ -62,6 +63,45 @@ $('.botonera-zoom-producto').owlCarousel({
     }
 });
 
+
+// tabs
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" activo", "");
+    }
+
+    // Show the current tab, and add an "activo" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " activo";
+}
+
+
+
+
+
+	// $(".nav-link").click(function(){
+ //          var me = $(this);
+ //          var panel = $('.tab-pane');
+ //          if(me.hasClass('active')){
+ //             me.removeClass('active').addClass('activo');
+ //            panel.removeClass('active').addClass('activo');
+ //                return false;
+ //          }
+ //        });
+
+
+
       // ===== smooth scroll to section ====
 
               $(function() {
@@ -82,8 +122,8 @@ $('.botonera-zoom-producto').owlCarousel({
 
 // ===== Scroll to Top ==== //
   $(window).scroll(function() {
-      if ($(this).scrollTop() >= 688) {        // If page is scrolled more than 500px
-          $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+      if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 500px
+          $('#return-to-top').fadeIn(500);    // Fade in the arrow
       } else {
           $('#return-to-top').fadeOut(200);   // Else fade out the arrow
       }
@@ -127,6 +167,8 @@ $.fn.moveIt = function(){
 	  $('[data-scroll-speed]').moveIt();
 	});
 
+// ===== zoom  ==== //
+//initiate the plugin and pass the id of the div containing gallery images
 
 // ===== zoom  ==== //
 //initiate the plugin and pass the id of the div containing gallery images
@@ -141,11 +183,6 @@ $("#img-producto").elevateZoom({
     zoomWindowFadeIn: 500,
     zoomWindowFadeOut: 750
   });
-
-
-
-
-
 
    // $(".mCustomScrollbar").mCustomScrollbar({axis:"x"});
 
