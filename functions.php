@@ -66,7 +66,6 @@ function theme_js(){
 	wp_enqueue_script('owl-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'),'1', true);
 	wp_enqueue_script('easing-js', get_template_directory_uri() . '/assets/js/jquery.easing.1.3.js', array('jquery'),'1', true);
  	wp_enqueue_script('handlebars', 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.runtime.min.js', array('jquery'),'1', true);
-	wp_enqueue_script('easing-js', get_template_directory_uri() . '/assets/js/jquery.easing.1.3.js', array('jquery'),'1', true);
 	wp_enqueue_script('instashow-js', get_template_directory_uri() . '/assets/js/instashow/jquery.instashow.js', array('jquery'),'1', true);
 	wp_enqueue_script('thermos-js', get_template_directory_uri() . '/assets/js/thermos.js', array('jquery'),'1', true);
 /*
