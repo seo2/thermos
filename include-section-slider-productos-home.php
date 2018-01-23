@@ -25,7 +25,9 @@
 
 								foreach ($items as $item) {
 
-								?>
+									?>
+
+
 								<a href="<?php echo get('slider_producto_link', $e, $item ); ?>" class="item">
 									<!-- 600x600 -->
 									<img class="img-fluid owl-lazy" data-src="<?php echo get('slider_producto_imagen', $e, $item); ?>" src="<?php echo get('slider_producto_imagen', $e, $item); ?>">

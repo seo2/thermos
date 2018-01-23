@@ -1,6 +1,5 @@
 <?php /* Template Name: Productos */ ?>
-
-<?php include('header.php'); ?>
+<?php get_header(); ?>
   <body>
   	<?php include('include-main-nav.php'); ?>
   	<div class="titulo-seccion">
@@ -54,4 +53,4 @@
 
   </section> <!-- productos -->
 
-<?php include('footer.php'); ?>
+<?php get_footer(); ?>

@@ -139,6 +139,12 @@ textarea { resize: none; }
 
 .btn-blanco-md:hover, .btn-blanco-md:focus { background-color: #494a4a; border-color: transparent; color: white; }
 
+.btn-blanco-sm { border-radius: 0; background-color: #fff; border: 1px solid black; font-family: "Greysans", Helvetica, Arial, sans-serif; color: black; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; letter-spacing: 3px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; cursor: pointer; cursor: pointer; margin: 20px 0; padding: 10px 40px; border: 2px solid black; }
+
+.btn-blanco-sm:hover, .btn-blanco-sm:focus { text-decoration: none; color: black; }
+
+.btn-blanco-sm:hover, .btn-blanco-sm:focus { background-color: #494a4a; border-color: transparent; color: white; }
+
 .btn-negro-lg { border-radius: 0; background-color: #000; border: 1px solid black; font-family: "Greysans", Helvetica, Arial, sans-serif; color: white; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; letter-spacing: 3px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; cursor: pointer; padding: 10px 70px; }
 
 .btn-negro-lg:hover, .btn-negro-lg:focus { text-decoration: none; color: black; }
@@ -508,6 +514,10 @@ section.nosotros h3 { font-family: "Bebas", Helvetica, Arial, sans-serif; font-s
 section.nosotros p { font-family: "Greysans", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; text-align: center; color: white; color: black; letter-spacing: 1px; }
 
 @media (max-width: 768px) { section.nosotros p { font-size: 14px; font-size: 0.875rem; } }
+
+section.not-found h3 { font-family: "Bebas", Helvetica, Arial, sans-serif; font-size: 38px; font-size: 2.375rem; text-transform: uppercase; color: black; letter-spacing: 2px; margin-bottom: 50px; }
+
+@media (max-width: 768px) { section.not-found h3 { font-size: 34px; font-size: 2.125rem; } }
 
 footer { background: #e4e4e4; position: relative; padding: 70px 0; }
 

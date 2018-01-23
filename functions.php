@@ -3,8 +3,8 @@
 function iniciarTema(){
     // ACTIVA IMAGENES DESTACADAS
     add_theme_support( 'post-thumbnails' );
-    add_image_size('preview_programacion', 400, 289, true);
-    add_image_size('preview_galerias', 650, 650, true);
+    // add_image_size('preview_programacion', 400, 289, true);
+    // add_image_size('preview_galerias', 650, 650, true);
 /*     add_image_size('galeria', 200); */
 
 //thumnails para las categorias
