@@ -19,7 +19,7 @@
 					'hierarchical' => 1,
 					'taxonomy' => 'category'
 				);
-				$child_categories = get_categories($args );
+				$child_categories = get_categories($args);
 				//echo '<pre>';
 				//	print_r($child_categories);
 				 //echo '</pre>';
@@ -40,13 +40,6 @@
 				 		</div>
 				 	</div>
 				<? } ?>
-
-
-
-
-
-
-
 
   		</div> <!-- row -->
   	</div> <!-- container -->
