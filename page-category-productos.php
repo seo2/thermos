@@ -11,13 +11,13 @@
 			<?php
 				$category = get_category_by_slug( 'productos' );
 				$args = array(
-					'type' => 'post',
-					'child_of' => $category->term_id,
-					'orderby' => 'name',
-					'order' => 'ASC',
-					'hide_empty' => FALSE,
-					'hierarchical' => 1,
-					'taxonomy' => 'category'
+					'type' 			=> 'post',
+					'child_of' 		=> $category->term_id,
+					'orderby' 		=> 'name',
+					'order'	 		=> 'ASC',
+					'hide_empty' 	=> FALSE,
+					'hierarchical' 	=> 1,
+					'taxonomy' 		=> 'category'
 				);
 				$child_categories = get_categories($args);
 				//echo '<pre>';

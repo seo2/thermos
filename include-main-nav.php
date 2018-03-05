@@ -18,7 +18,7 @@
 						<a class="nav-link" href="<?php bloginfo('url'); ?>/nosotros/">nosotros</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?php bloginfo('url'); ?>/category/productos/">productos</a>
+						<a class="nav-link" href="<?php bloginfo('url'); ?>/productos/">productos</a>
 					</li>
 					<li class="nav-item d-none d-lg-block">
 						<a class="nav-link" href="<?php bloginfo('url'); ?>">
