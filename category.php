@@ -47,7 +47,8 @@
 				 	<div class="col-sm-4">
 				 		<div class="box">
 				 			<a href="<?php the_permalink(); ?>">
-								<img class="img-responsive" src="<?php echo get('imagenes_slider_imagen_grande'); ?>" alt="">
+<!-- 								<img class="img-responsive" src="<?php echo get('imagenes_slider_imagen_grande'); ?>" alt=""> -->
+								<?php the_post_thumbnail('productos', array('class' => 'img-responsive ')); ?>
 				 			</a>
 				 			<div class="box-title">
 				 				<h3> <?php the_title(); ?> </h3>
