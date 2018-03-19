@@ -55,7 +55,7 @@
   			<section class="info-producto  mt-50">
 
 						<div class="tab">
-						  <a class="btn btn-default tablinks" onclick="openCity(event, 'info')">información del producto</a>
+						  <a class="btn btn-default tablinks" onclick="openCity(event, 'info')">información</a>
 						  <a class="btn btn-default tablinks" onclick="openCity(event, 'specs')">especificaciones</a>
 						  <a class="btn btn-default tablinks" onclick="openCity(event, 'care')">cuidado y uso</a>
 						</div>
