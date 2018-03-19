@@ -1,3 +1,158 @@
+	.nav-tabs{
+		width: 100%;
+		.nav-item{
+			width: 33.333333%;
+			background-color: #f4f4f4;
+			.nav-link{
+				@include font-size(14px);
+				font-family: $greysans;
+				letter-spacing: 2px;
+				text-decoration: none;
+				text-align: center;
+				text-transform: uppercase;
+				color: black;
+				border-radius: 0;
+				border: none;
+				height: 100%;
+				&.active, &:hover, &:focus{
+					background-color: $gris-claro;
+				}
+				@media(max-width: 767px){
+					padding: 10px 2px;
+					@include font-size(10px);
+					letter-spacing: 0;
+				}
+			}
+		}
+	}
+	.tab-content{
+		padding: 30px;
+		.tab-pane{
+			p{
+				@include font-size(14px);
+				color: black;
+				letter-spacing: 2px;
+				line-height: 20px;
+			}
+		}
+	}
+
+
+
+
+// tabs
+.tab {
+    overflow: hidden;
+    //border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab a {
+    // background-color: inherit;
+    // float: left;
+    // border: none;
+    // outline: none;
+    // cursor: pointer;
+    // padding: 14px 16px;
+    // transition: 0.3s;
+    // display: inline-block;
+    // width: 33.333333%;
+    // background-color: #f4f4f4;
+    // border-radius: 0;
+    @include font-size(14px);
+    font-family: $greysans;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    float: left;
+    border-radius: 0;
+    border: none;
+    height: 100%;
+    width: 33.333333%;
+    cursor: pointer;
+    &.activo, &:hover, &:focus{
+    	background-color: $gris-claro;
+    }
+    @media(max-width: 767px){
+    	padding: 10px 2px;
+    	@include font-size(10px);
+    	letter-spacing: 0;
+    }
+
+
+
+}
+
+// /* Change background color of buttons on hover */
+// .tab a:hover {
+//     background-color: #ddd;
+// }
+
+// /* Create an active/current tablink class */
+// .tab a.activo {
+//     background-color: #ccc;
+// }
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 30px;
+  //  border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+
+    p{
+				@include font-size(14px);
+				color: black;
+				letter-spacing: 2px;
+				line-height: 20px;
+			}
+
+}
+
+
+// fin tabs
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 100;
+        @media (max-width: 767px){
+            right: 15px;
+        }
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    &:hover i {
+        color: #fff;
+        top: 5px;
+    }
+    i {
+      color: #fff;
+      margin: 0;
+      position: relative;
+      left: 16px;
+      top: 13px;
+      font-size: 19px;
+
+      transition: all 0.3s ease;
+    }
+}
+
 .banderita{
 	position: absolute;
 	background-color: transparent;
@@ -225,6 +380,13 @@ textarea {
 	@include btn-blanco;
 	margin: 20px 0;
 	padding: 10px 70px;
+
+}
+.btn-blanco-sm{
+	@include btn-blanco;
+	margin: 20px 0;
+	padding: 10px 40px;
+	border: 2px solid black;
 
 }
 .btn-negro-lg{

@@ -2,6 +2,8 @@
 
 body { min-height: 75rem; padding-top: 6.25rem; }
 
+@media (max-width: 768px) { body { padding-top: 70px; } }
+
 a:focus, input[type="text"] { outline: none !important; }
 
 @font-face { font-family: 'Greysans'; src: url("../fonts/grey_sans_light-webfont.woff2") format("woff2"), url("../fonts/grey_sans_light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
@@ -153,7 +155,9 @@ textarea { resize: none; }
 
 .navbar .logo-xs { padding: 0; }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { .navbar .logo-xs { position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 10px; } }
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) { .navbar .logo-xs { position: absolute; left: 50%; -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); top: 10px; } }
+
+@media (max-width: 767px) { .navbar .logo-xs img { max-height: 30px; margin-left: 10px; } }
 
 @media (min-width: 991px) { .navbar { padding: 0; } }
 
@@ -427,6 +431,8 @@ section.producto .info-producto { min-height: 300px; width: 100%; }
 
 section.producto .nombre-producto h4 { text-transform: uppercase; letter-spacing: 3px; line-height: 24px; margin-bottom: 20px; font-family: "Greysans", Helvetica, Arial, sans-serif; }
 
+@media (max-width: 767px) { section.producto .nombre-producto h4 { font-size: 12px; font-size: 0.75rem; line-height: 18px; } }
+
 section.producto .caracteristicas-producto { /* Prevent nested li's from getting messed up */ }
 
 section.producto .caracteristicas-producto ul.dashed { list-style: none; padding-left: 0; }
@@ -437,7 +443,15 @@ section.producto .caracteristicas-producto ul.dashed > li::before { content: "- 
 
 section.producto .caracteristicas-producto ul { text-transform: uppercase; letter-spacing: 3px; font-family: "Greysans", Helvetica, Arial, sans-serif; }
 
+@media (max-width: 767px) { section.producto .caracteristicas-producto ul { font-size: 12px; font-size: 0.75rem; line-height: 18px; } }
+
 section.producto .caracteristicas-producto p { text-transform: uppercase; font-size: 14px; font-size: 0.875rem; letter-spacing: 3px; margin-bottom: 0; font-family: "Greysans", Helvetica, Arial, sans-serif; }
+
+@media (max-width: 767px) { section.producto .caracteristicas-producto p { font-size: 12px; font-size: 0.75rem; line-height: 18px; } }
+
+section.producto .caracteristicas-producto a.btn-blanco-md { max-width: 200px; padding: 10px 0; display: block; }
+
+@media (max-width: 767px) { section.producto .caracteristicas-producto a.btn-blanco-md { margin: 20px auto 10px auto; } }
 
 section.producto #galeria-producto { position: relative; }
 

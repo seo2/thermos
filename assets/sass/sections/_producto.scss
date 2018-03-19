@@ -1,5 +1,8 @@
 section.producto{
-
+	.info-producto{
+		min-height: 300px;
+		width: 100%;
+	}
 	.nombre-producto{
 		h4{
 			text-transform: uppercase;
@@ -7,6 +10,10 @@ section.producto{
 			line-height: 24px;
 			margin-bottom: 20px;
 			font-family: $greysans;
+			@media(max-width:767px){
+				@include font-size(12px);
+				line-height: 18px;
+			}
 		}
 	}
 	.caracteristicas-producto{
@@ -15,6 +22,10 @@ section.producto{
 			text-transform: uppercase;
 			letter-spacing: 3px;
 			font-family: $greysans;
+			@media(max-width:767px){
+				@include font-size(12px);
+				line-height: 18px;
+			}
 		}
 		p{
 			text-transform: uppercase;
@@ -22,46 +33,26 @@ section.producto{
 			letter-spacing: 3px;
 			margin-bottom: 0;
 			font-family: $greysans;
+			@media(max-width:767px){
+				@include font-size(12px);
+				line-height: 18px;
+			}
 		}
-	}
-	.nav-tabs{
-		width: 100%;
-		.nav-item{
-			width: 33.333333%;
-			background-color: #f4f4f4;
-			.nav-link{
-				@include font-size(14px);
-				font-family: $greysans;
-				letter-spacing: 2px;
-				text-decoration: none;
-				text-align: center;
-				text-transform: uppercase;
-				color: black;
-				border-radius: 0;
-				border: none;
-				height: 100%;
-				&.active, &:hover, &:focus{
-					background-color: $gris-claro;
+		a{
+			&.btn-blanco-md{
+				max-width: 200px;
+				padding: 10px 0;
+				display: block;
+				@media(max-width:767px){
+					margin: 20px auto 10px auto;
 				}
-				@media(max-width: 767px){
-					padding: 10px 2px;
-					@include font-size(10px);
-					letter-spacing: 0;
-				}
+
 			}
 		}
 	}
-	.tab-content{
-		padding: 30px;
-		.tab-pane{
-			p{
-				@include font-size(14px);
-				color: black;
-				letter-spacing: 2px;
-				line-height: 20px;
-			}
-		}
-	}
+
+
+
 #galeria-producto {
   position: relative;
   .img-zoom-wrapper{
@@ -92,6 +83,8 @@ section.producto{
 			  transition: all 0.5s ease;
 			  opacity: 1;
 			  border: 1px solid transparent;
+			  max-width: 125px;
+			  max-height: 125px;
 			  &:hover{
 			    opacity: 0.6;
 			   	border-color: black;

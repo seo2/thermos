@@ -5,6 +5,10 @@
 body {
   min-height: 75rem;
   padding-top: 6.25rem;
+ @media(max-width:768px){
+ padding-top: 70px;
+
+ }
 }
 
 // ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

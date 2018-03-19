@@ -1,10 +1,18 @@
 .navbar{
 	.logo-xs{
 		padding: 0;
-		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+		@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 			@include centerer(true, false);
 			top: 10px;
+
 		}
+		img{
+			@media(max-width: 767px){
+			max-height: 30px;
+			margin-left: 10px;
+			}
+		}
+
 	}
 	@media(min-width:991px){
 		padding: 0;
@@ -13,7 +21,6 @@
 
 	#navbarCollapse {
 		position: relative;
-
 		@media(min-width: 991px){
 			min-height: 100px;
 		}
