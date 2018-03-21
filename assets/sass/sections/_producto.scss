@@ -17,15 +17,17 @@ section.producto{
 		}
 	}
 	.caracteristicas-producto{
-		@include lista-guion;
+		//@include lista-guion;
 		ul{
+
 			text-transform: uppercase;
 			letter-spacing: 3px;
 			font-family: $greysans;
-			@media(max-width:767px){
-				@include font-size(12px);
+			padding-left: 15px;
+
+				@include font-size(13px);
 				line-height: 18px;
-			}
+
 		}
 		p{
 			text-transform: uppercase;

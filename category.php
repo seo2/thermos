@@ -1,3 +1,4 @@
+<!-- plnatilla que muestra los productos hijos -->
 <?php get_header(); ?>
   <body>
   	<?php include('include-main-nav.php'); ?>
@@ -39,23 +40,23 @@
 				);
 				$the_query = new WP_Query( $args );
 
-					
+
 					while ( $the_query->have_posts() ) {
 						$the_query->the_post();
-				?>						
+				?>
 
 				 	<div class="col-sm-4">
-				 		<div class="box">
+				 		<div class="box box-grilla">
 				 			<a href="<?php the_permalink(); ?>">
 <!-- 								<img class="img-responsive" src="<?php echo get('imagenes_slider_imagen_grande'); ?>" alt=""> -->
-								<?php the_post_thumbnail('productos', array('class' => 'img-responsive ')); ?>
+								<?php the_post_thumbnail('productos', array('class' => 'img-fluid ')); ?>
 				 			</a>
-				 			<div class="box-title">
+				 			<div class="box-title nombre-producto">
 				 				<h3> <?php the_title(); ?> </h3>
 				 			</div>
 				 		</div>
-				 	</div>						
-				<?php		
+				 	</div>
+				<?php
 					}
 				?>
 

@@ -183,17 +183,17 @@
 //lista con guiones
 @mixin lista-guion{
 
-		ul.dashed {
+		ul {
 		    list-style: none;
 		    padding-left: 0;
 		}
 
-		ul.dashed > li {
+		ul > li {
 		    margin-left: 15px;
 		}
 
 		/* Prevent nested li's from getting messed up */
-		ul.dashed > li::before {
+		ul > li::before {
 		    content: "- ";
 		    margin-left: -15px;
 		}
@@ -249,6 +249,9 @@
 	width: 100%;
 	display:block;
 	cursor: pointer;
+	&.box-grilla{
+		margin-bottom: 40px;
+	}
 
 	@include hoverzoom;
 
@@ -256,6 +259,7 @@
 		position: relative;
 		min-height: 40px;
 		margin: 10px 0;
+		text-align: center;
 		i{
 			@include font-size(18px);
 		}
@@ -266,6 +270,15 @@
 			text-transform: uppercase;
 			color: black;
 			letter-spacing: 3px;
+			width: 80%;
+		}
+		&.nombre-producto{
+			margin-top:20px;
+			h3{
+				@include font-size(16px);
+				line-height: 17px;
+				text-align:center;
+			}
 		}
 	}
 }

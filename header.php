@@ -10,9 +10,6 @@
     <?php else : ?>
     <title><?php wp_title('', true,''); ?> · Thermos</title>
     <?php endif;?>
-
-
-
 	 <?php wp_head(); ?>
   </head>
  <body>

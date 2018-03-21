@@ -1,3 +1,4 @@
+<!-- plantilla que muestra los productos padres -->
 <?php /* Template Name: Productos */ ?>
 <?php get_header(); ?>
   <body>
@@ -11,13 +12,13 @@
 			<?php
 				$category = get_category_by_slug( 'productos' );
 				$args = array(
-					'type' 			=> 'post',
-					'child_of' 		=> $category->term_id,
-					'orderby' 		=> 'name',
-					'order'	 		=> 'ASC',
-					'hide_empty' 	=> FALSE,
-					'hierarchical' 	=> 1,
-					'taxonomy' 		=> 'category'
+					'type' => 'post',
+					'child_of' => $category->term_id,
+					'orderby' => 'name',
+					'order' => 'ASC',
+					'hide_empty' => FALSE,
+					'hierarchical' => 1,
+					'taxonomy' => 'category'
 				);
 				$child_categories = get_categories($args);
 				//echo '<pre>';
@@ -31,11 +32,11 @@
 					?>
 				 	<div class="col-sm-4">
 				 		<div class="box">
-				 			<a href="<?php bloginfo('url')?>/category/<?php echo $child->cat_name; ?>">
-								<img class="img-responsive" src="<?php echo $imagen->url;?>" alt="">
+				 			<a href="<?php bloginfo('url')?>/category/<?php echo $child->category_nicename; ?>">
+								<img class="img-fluid" src="<?php echo $imagen->url;?>" alt="">
 				 			</a>
 				 			<div class="box-title">
-				 				<h3> <?php echo $child->category_nicename; ?> </h3>
+				 				<h3> <?php echo $child->cat_name; ?> </h3>
 				 			</div>
 				 		</div>
 				 	</div>
