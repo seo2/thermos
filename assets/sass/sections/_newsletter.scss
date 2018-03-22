@@ -7,6 +7,7 @@ section.newsletter{
 
 	.form-group{
 		position: relative;
+		margin-bottom: 0;
 		.form-control{
 			border: 2px solid black;
 			border-radius: 0;
@@ -56,4 +57,16 @@ section.newsletter{
 
 
 	}
+	.wpcf7-response-output {
+		margin: 0;
+		padding: 10px;
+		//border: 2px solid #ff0000;
+		text-align: center;
+		&.wpcf7-validation-errors,
+		&.wpcf7-acceptance-missing {
+			border-color: red;
+		}
+	}
 }
+
+

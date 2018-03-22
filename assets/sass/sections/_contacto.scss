@@ -31,4 +31,14 @@ section.contacto{
 			}
 		}
 	}
+	.wpcf7-response-output {
+		margin-top: 20px;
+		padding: 10px;
+		//border: 2px solid #ff0000;
+		text-align: center;
+		&.wpcf7-validation-errors,
+		&.wpcf7-acceptance-missing {
+			border-color: red;
+		}
+	}
 }

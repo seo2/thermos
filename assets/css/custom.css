@@ -252,16 +252,20 @@ section.contacto form#contacto .btn-negro-lg { margin-top: 10px; padding: 10px 4
 section.contacto form#contacto .wpcf7-form-control.wpcf7-submit { border-radius: 0; background-color: #000; border: 1px solid black; font-family: "Greysans", Helvetica, Arial, sans-serif; color: white; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; letter-spacing: 3px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; cursor: pointer; margin-top: 10px; padding: 10px 40px; }
 section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:hover, section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:focus { text-decoration: none; color: black; }
 section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:hover, section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:focus { background-color: #494a4a; border-color: transparent; color: white; }
+section.contacto .wpcf7-response-output { margin-top: 20px; padding: 10px; text-align: center; }
+section.contacto .wpcf7-response-output.wpcf7-validation-errors, section.contacto .wpcf7-response-output.wpcf7-acceptance-missing { border-color: red; }
 
 section.newsletter { padding-bottom: 100px; }
 section.newsletter form#newsletter { max-width: 650px; margin: 0 auto; }
-section.newsletter form#newsletter .form-group { position: relative; }
+section.newsletter form#newsletter .form-group { position: relative; margin-bottom: 0; }
 section.newsletter form#newsletter .form-group .form-control { border: 2px solid black; border-radius: 0; padding: 20px; text-transform: uppercase; letter-spacing: 3px; }
 @media (max-width: 423px) { section.newsletter form#newsletter .form-group .form-control { padding: 10px; font-size: 12px; font-size: 0.75rem; } }
 section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit { border-radius: 0; background-color: #000; border: 1px solid black; font-family: "Greysans", Helvetica, Arial, sans-serif; color: white; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; letter-spacing: 3px; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; cursor: pointer; min-height: 68px; border: none; position: absolute; right: 0; top: 0; padding: 0 20px; }
 section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit:hover, section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit:focus { text-decoration: none; color: black; }
 section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit:hover, section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit:focus { background-color: #494a4a; border-color: transparent; color: white; }
 @media (max-width: 423px) { section.newsletter form#newsletter .form-group .wpcf7-form-control.wpcf7-submit { min-height: 42px; padding: 0 10px; font-size: 10px; font-size: 0.625rem; } }
+section.newsletter .wpcf7-response-output { margin: 0; padding: 10px; text-align: center; }
+section.newsletter .wpcf7-response-output.wpcf7-validation-errors, section.newsletter .wpcf7-response-output.wpcf7-acceptance-missing { border-color: red; }
 
 section.producto .info-producto { min-height: 300px; width: 100%; }
 section.producto .nombre-producto h4 { text-transform: uppercase; letter-spacing: 3px; line-height: 24px; margin-bottom: 20px; font-family: "Greysans", Helvetica, Arial, sans-serif; }
