@@ -3,12 +3,9 @@
 		<img class="img-fluid d-block mx-auto section-title" src="<?php bloginfo('template_url'); ?>/assets/img/tit-newsletter.png" alt="">
 		<div class="row">
 			<div class="col">
-				<form id="newsletter" class="d-block mx-auto">
-				  	<div class="form-group">
-				    	<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="ingresa tu mail">
-    				  		<button type="submit" class="btn btn-primary btn-negro-lg">suscríbete</button>
-				  	</div>
-				</form><!-- form newsletter -->
+				<div class="d-block mx-auto">
+				  	<?php echo do_shortcode( '[contact-form-7 id="175" title="Newsletter" html_id="newsletter"]' ); ?>
+				</div><!-- form newsletter -->
 			</div>
 		</div>
 	</div>

@@ -377,7 +377,22 @@ function is_url_exist($url){
    return $status;
 }
 
+add_filter( 'the_author', 'guest_author_name' );
+add_filter( 'get_the_author_display_name', 'guest_author_name' );
 
+function guest_author_name( $name ) {
+global $post;
+$author = get_post_meta( $post->ID, 'author', true );
+if ( $author )
+$name = $author;
+return $name;
+}
 
+define( 'WPCF7_AUTOP', false );
+add_filter('wpcf7_autop_or_not', '__return_false');
 
-?>
+add_filter('wpcf7_form_elements', function($content) {
+    $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+    return $content;
+});
