@@ -3,21 +3,40 @@ section.newsletter{
 //	background: $gris;
 	form#newsletter{
 		max-width: 650px;
+		margin: 0 auto;
 
-		.form-group{
-			position: relative;
-			.form-control{
-				border: 2px solid black;
-				border-radius: 0;
-				padding: 20px;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-				@media(max-width:423px){
-					padding: 10px;
-					@include font-size(12px);
-				}
+	.form-group{
+		position: relative;
+		.form-control{
+			border: 2px solid black;
+			border-radius: 0;
+			padding: 20px;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			@media(max-width:423px){
+				padding: 10px;
+				@include font-size(12px);
 			}
-			.btn-negro-lg{
+		}
+		// .btn-negro-lg{
+		// 	min-height: 68px;
+		// 	border: none;
+		// 	position: absolute;
+		// 	right: 0;
+		// 	top: 0;
+		// 	//max-width: 20%;
+		// 	padding: 0 20px;
+		// 	@media(max-width:423px){
+		// 		min-height: 42px;
+		// 		padding: 0 10px;
+		// 		@include font-size(10px);
+
+		// 	}
+		// }
+		.wpcf7-form-control{
+
+			&.wpcf7-submit{
+				@include btn-negro;
 				min-height: 68px;
 				border: none;
 				position: absolute;
@@ -33,5 +52,8 @@ section.newsletter{
 				}
 			}
 		}
+	}
+
+
 	}
 }
