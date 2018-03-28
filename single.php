@@ -14,6 +14,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 		$imagen_receta = get_image('noticias_imagen_receta',1,1,0);
 		$texto_btn = $noticia['noticias_texto_btn'][1];
 		$pasos = $noticia['noticias_pasos'][1];
+		$es_receta = $noticia['noticias_es_receta'][1];
 
 		if($imagen_horizontal == ""){
 			$imagen_horizontal = $imagen_vertical;
@@ -44,24 +45,30 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				</div>
 			</div>
 			<div class="col-sm-4">
+				<?php if($es_receta == 'Si' ) :?>
 				<h2><?php echo $titulo_receta;?></h2>
 				<ul class="autor">
 					<li>Autor: <?php echo $author;?></li>
 					<li>Porciones: <?php echo $porciones;?></li>
 				</ul>
-				<h2>INGREDIENTS</h2>
+				<?php endif;?>
+				<?php if($ingredientes != "") :?>
+				<h2>INGREDIENTES</h2>
 				<div class="ingredientes">
 					<?php echo $ingredientes;?>
 				</div> <!-- ingredientes -->
+				<?php endif;?>
 			</div>
 			<div class="col-sm-8">
 				<img class="img-fluid float-right" src="<?php echo $imagen_receta;?>" alt="">
 			</div>
+			<?php if($pasos != "") :?>
 			<div class="col-sm-12">
 				<div class="pasos">
 					<?php echo $pasos;?>
 				</div> <!-- pasos -->
 			</div>
+			<?php endif;?>
   		</div>
   	</div>
   </section> <!-- noticia -->
