@@ -310,7 +310,9 @@ section.noticia ul, section.noticia ol { padding: 0 0 0 12px; }
 section.noticia ul li, section.noticia ol li { font-family: "Greysans", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; color: white; }
 @media (max-width: 768px) { section.noticia ul li, section.noticia ol li { font-size: 16px; font-size: 1rem; } }
 section.noticia ul.autor { list-style-type: none; padding-left: 0; }
-section.noticia .pasos { margin-top: 30px; font-family: "Greysans", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; text-align: center; color: white; }
+section.noticia .pasos { margin-top: 30px; font-family: "Greysans", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; text-align: left; color: white; }
+section.noticia .pasos p { text-align: left; }
+section.noticia .pasos ol li { text-align: left; }
 section.noticia .pasos p { font-family: "Greysans", Helvetica, Arial, sans-serif; font-size: 14px; font-size: 0.875rem; text-align: left; color: white; }
 
 section.nosotros { text-align: center; }

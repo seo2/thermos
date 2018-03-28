@@ -40,8 +40,16 @@ section.noticia{
 		font-family: "Greysans", Helvetica, Arial, sans-serif;
 	    font-size: 14px;
 	    font-size: 0.875rem;
-	    text-align: center;
+	    text-align: left;
 	    color: white;
+	    p{
+			text-align: left;
+	    }
+	    ol{
+	    	li{
+	    		text-align: left;
+	    	}
+	    }
 	}
 	.pasos p{
 		font-family: "Greysans", Helvetica, Arial, sans-serif;
