@@ -22,8 +22,9 @@
 				</form>-->
 				<?php echo do_shortcode( '[contact-form-7 id="174" title="Formulario de contacto 1" html_id="contacto"]' ); ?>
 			</div>
-			<div class="col-sm-6">
-				<img class="img-fluid mapa-chile" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
+			<div class="col-sm-12">
+				<img class="img-fluid mapa-chile-h" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile-h.png" alt="mapa chile">
+				<img class="img-fluid mapa-chile-v" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
 			</div>
 		</div>
 
