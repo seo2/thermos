@@ -41,4 +41,13 @@ section.contacto{
 			border-color: red;
 		}
 	}
+	.mapa-chile{
+
+		@media(min-width: 767px){
+			max-width: 350px;
+		}
+		@media(max-width: 767px){
+			margin-top: 20px;
+		}
+	}
 }

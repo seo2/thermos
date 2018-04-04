@@ -254,6 +254,8 @@ section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:hover, section.c
 section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:hover, section.contacto form#contacto .wpcf7-form-control.wpcf7-submit:focus { background-color: #494a4a; border-color: transparent; color: white; }
 section.contacto .wpcf7-response-output { margin-top: 20px; padding: 10px; text-align: center; }
 section.contacto .wpcf7-response-output.wpcf7-validation-errors, section.contacto .wpcf7-response-output.wpcf7-acceptance-missing { border-color: red; }
+@media (min-width: 767px) { section.contacto .mapa-chile { max-width: 350px; } }
+@media (max-width: 767px) { section.contacto .mapa-chile { margin-top: 20px; } }
 
 section.newsletter { padding-bottom: 100px; }
 section.newsletter form#newsletter { max-width: 650px; margin: 0 auto; }
