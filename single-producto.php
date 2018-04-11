@@ -47,7 +47,7 @@
   				</div>
 				<div class="caracteristicas-producto">
 					<?php the_content(); ?>
-					<a class="btn btn-primary btn-blanco-md" href="#" role="button">ver más</a>
+				<!-- 	<a class="btn btn-primary btn-blanco-md" href="#" role="button">ver más</a> -->
 				</div>
   			</div>
   		</div>
