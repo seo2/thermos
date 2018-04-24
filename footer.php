@@ -23,6 +23,30 @@
 				</div>
 		</div>
 	</footer><!-- footer -->
+
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        		<span aria-hidden="true">&times;</span>
+       		</button>
+       <h1> Qué es el BPA FREE y por qué es importante </h1>
+
+       <p> Bisfenol A (BPA) es una sustancia química que no tiene
+			lugar en nuestros productos. Algunos investigadores han
+			relacionado este controversial químico, encontrado en latas de alimentos,
+			botellas de agua y más, con una serie de problemas hormonales.
+			Incluidos los efectos en la conducta y el desarrollo de niños.
+			En Thermos lo mantenemos lejos. Estamos comprometidos con tu familia y
+			es por eso que fabricamos productos que no contengan ningún rastro de BPA.</p>
+        <p>Thermos es BPA FREE </p>
+      </div>
+    </div>
+  </div>
+</div> <!-- modal bpa free -->
+
    <?php wp_footer(); ?>
   </body>
 </html>

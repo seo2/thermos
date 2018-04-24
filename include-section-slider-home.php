@@ -1,6 +1,11 @@
 
 <section class="slider-home">
 	<img id="etiqueta" class="img-fluid img-fluid d-none d-sm-none d-md-block" src="<?php bloginfo('template_url'); ?>/assets/img/bt-kw.png">
+	<a href="javascript:void(0);" data-toggle="modal" data-target="#myModal">
+		<img id="bpa-free" class="img-fluid d-none d-sm-none d-md-block" src="<?php bloginfo('template_url'); ?>/assets/img/btn-bpa-free.png">
+		<img id="bpa-free-xs" class="img-fluid d-block d-sm-block d-md-none" src="<?php bloginfo('template_url'); ?>/assets/img/btn-bpa-free-xs.png">
+	</a>
+
 	<img id="etiqueta-xs" class="img-fluid d-block d-sm-block d-md-none" src="<?php bloginfo('template_url'); ?>/assets/img/bt-kw-xs.png">
 	<div id="slider-home" class="owl-carousel owl-theme">
 		<?php

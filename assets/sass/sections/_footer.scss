@@ -56,3 +56,68 @@ footer{
 		}
 	}
 }
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+#myModal{
+	.modal-dialog{
+		.modal-content{
+			position: relative;
+			border: 10px solid rgba(255,255,255,.4);
+			padding: 20px 15px 0 15px;
+			.modal-body{
+
+				.close{
+					position: absolute;
+					opacity: 1;
+					color: white;
+					font-size: 40px;
+					right: -40px;
+					top: -40px;
+					width: 40px;
+					height: 40px;
+					outline: none;
+					display: inline-block;
+					background-color: red;
+					border-radius: 50px;
+					cursor: pointer;
+					@media(max-width:767px){
+						right: -25px;
+						top: -30px;
+					}
+				}
+				h1{
+					font-family: "Bebas", Helvetica, Arial, sans-serif;
+					color: black;
+					@include font-size(28px);
+					text-transform: uppercase;
+					margin-bottom: 20px;
+
+				}
+				p{
+					font-family: "Greysans", Helvetica, Arial, sans-serif;
+					color: black;
+					@include font-size(14px);
+				}
+			}
+		}
+	}
+}
