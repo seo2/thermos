@@ -43,9 +43,11 @@ section.contacto{
 	}
 
 	img{
-		&.mapa-chile-h{
+		&.mapa-r, &.mapa-l{
 			@media(min-width: 769px){
-			display: block;
+			display: table;
+			margin: 0 auto;
+			margin-top: 50px;
 			}
 			@media(max-width: 768px){
 				display: none;

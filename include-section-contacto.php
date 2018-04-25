@@ -22,10 +22,22 @@
 				</form>-->
 				<?php echo do_shortcode( '[contact-form-7 id="174" title="Formulario de contacto 1" html_id="contacto"]' ); ?>
 			</div>
-			<div class="col-sm-12">
+			<!-- <div class="col-sm-12">
 				<img class="img-fluid mapa-chile-h" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile-h.png" alt="mapa chile">
 				<img class="img-fluid mapa-chile-v" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
+			</div> -->
+			<div class="col-sm-6 hidden-xs">
+				<img class="img-fluid mapa-l" src="<?php bloginfo('template_url'); ?>/assets/img/mapal.png" alt="mapa chile">
 			</div>
+			<div class="col-sm-6 hidden-xs">
+				<img class="img-fluid mapa-r" src="<?php bloginfo('template_url'); ?>/assets/img/mapar.png" alt="mapa chile">
+			</div>
+
+
+			<div class="col-sm-12 visible-xs">
+				<img class="img-fluid mapa-chile-v" src="<?php bloginfo('template_url'); ?>/assets/img/mapa-chile.png" alt="mapa chile">
+			</div>
+
 		</div>
 
 	</div>
