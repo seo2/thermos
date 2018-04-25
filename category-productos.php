@@ -17,6 +17,7 @@
 					'orderby' => 'name',
 					'order' => 'ASC',
 					'hide_empty' => FALSE,
+					'posts_per_page'=>-1,
 					'hierarchical' => 1,
 					'taxonomy' => 'category'
 				);

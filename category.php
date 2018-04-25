@@ -36,6 +36,7 @@
 <?php
 				$args = array(
 					'post_type' 	=> 'producto',
+					'posts_per_page'=>-1,
 					'category_name' => $categoria
 				);
 				$the_query = new WP_Query( $args );
