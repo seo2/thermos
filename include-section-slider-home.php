@@ -25,13 +25,23 @@
 			$fotos = get_order_field('banner_imagen_escritorio', $bloque); // guarda las fotos en un array
 			foreach ($fotos as $foto) {
 			?>
-				<a href="<?php echo get('banner_link', $e, $foto ); ?>" class="item">
-					<!-- 1920*600 -->
-					<img class="img-fluid d-none d-sm-none d-md-block owl-lazy" data-src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>" src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>">
-					<!-- 800 x 800 -->
-					<img class="img-fluid d-block d-sm-block d-md-none owl-lazy" data-src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>" src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>">
-				</a>
-              <? } ?>
+			<?
+				if(get('banner_link', $e, $foto ) != "") { ?>
+					<a href="<?php echo get('banner_link', $e, $foto ); ?>" class="item" target="<?php if(get('enlace_externo')){?>_blank<?php } ?>">
+						<!-- 1920*600 -->
+						<img class="img-fluid d-none d-sm-none d-md-block owl-lazy" data-src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>" src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>">
+						<!-- 800 x 800 -->
+						<img class="img-fluid d-block d-sm-block d-md-none owl-lazy" data-src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>" src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>">
+					</a>
+				<? } else { ?>
+					<div class="item">
+						<!-- 1920*600 -->
+						<img class="img-fluid d-none d-sm-none d-md-block owl-lazy" data-src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>" src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>">
+						<!-- 800 x 800 -->
+						<img class="img-fluid d-block d-sm-block d-md-none owl-lazy" data-src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>" src="<?php echo get('banner_imagen_mobile', $e, $foto); ?>">
+					</div>
+				<? } ?>
+        	<? } ?>
         <? } ?>
         <?php endwhile; else: ?>
         <?php endif; ?>
