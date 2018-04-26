@@ -27,7 +27,7 @@
 			?>
 			<?
 				if(get('banner_link', $e, $foto ) != "") { ?>
-					<a href="<?php echo get('banner_link', $e, $foto ); ?>" class="item" target="<?php if(get('enlace_externo')){?>_blank<?php } ?>">
+					<a href="<?php echo get('banner_link', $e, $foto ); ?>" class="item" target="<?php if(get('enlace_externo', $e, $foto)){?>_blank<?php } ?>">
 						<!-- 1920*600 -->
 						<img class="img-fluid d-none d-sm-none d-md-block owl-lazy" data-src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>" src="<?php echo get('banner_imagen_escritorio', $e, $foto); ?>">
 						<!-- 800 x 800 -->
